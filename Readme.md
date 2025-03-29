@@ -4,25 +4,29 @@
 
 - Данные для проверки работы 
 > (https://8b7si3.buildship.run/me)
-> {
-> "id": 2,
-> "username": admin
-> }
-[Скрин буилдшипа]([https://drive.google.com/file/d/1q8mOOZY584GQDueKdjzIIke_v5OqRPU_/view?usp=sharing](https://docs.google.com/document/d/1o-Jr56dm3gv0kHCwplex3QjXYw1dEn8FLc13U6z79v4/edit?usp=sharing))
+```json
+{
+  "password": "admin",
+  "username": "admin"
+}
+```
+> [Скрин буилдшипа]([https://drive.google.com/file/d/1q8mOOZY584GQDueKdjzIIke_v5OqRPU_/view?usp=sharing](https://docs.google.com/document/d/1o-Jr56dm3gv0kHCwplex3QjXYw1dEn8FLc13U6z79v4/edit?usp=sharing))
 
 ## Part 2
 
 - Данные для проверки работы 
 > (https://8b7si3.buildship.run/me](https://8b7si3.buildship.run/message)
-> {
-> "username": "admin",
-> "password": "admin",
-> "message": {
->   "to": "elya",
->   "text": "hi"
->  }
-> }
-[Скрин буилдшипа]([https://drive.google.com/file/d/1q8mOOZY584GQDueKdjzIIke_v5OqRPU_/view?usp=sharing](https://docs.google.com/document/d/1o-Jr56dm3gv0kHCwplex3QjXYw1dEn8FLc13U6z79v4/edit?usp=sharing))
+```json
+{
+  "password": "admin",
+  "message": {
+    "text": "hi",
+    "to": "elya"
+  },
+  "username": "admin"
+}
+```
+> [Скрин буилдшипа]([https://drive.google.com/file/d/1q8mOOZY584GQDueKdjzIIke_v5OqRPU_/view?usp=sharing](https://docs.google.com/document/d/1o-Jr56dm3gv0kHCwplex3QjXYw1dEn8FLc13U6z79v4/edit?usp=sharing))
 
 ## Part 3
 
