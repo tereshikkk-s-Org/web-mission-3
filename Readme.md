@@ -1,23 +1,76 @@
-# Mission 2
+# Mission 3
 
-## Part 0
+## Part 1
 
-[Link to video](https://drive.google.com/file/d/1q8mOOZY584GQDueKdjzIIke_v5OqRPU_/view?usp=sharing)
+- Данные для проверки работы 
+> (https://8b7si3.buildship.run/me)
+> {
+> "id": 2,
+> "username": admin
+> }
+[Скрин буилдшипа]([https://drive.google.com/file/d/1q8mOOZY584GQDueKdjzIIke_v5OqRPU_/view?usp=sharing](https://docs.google.com/document/d/1o-Jr56dm3gv0kHCwplex3QjXYw1dEn8FLc13U6z79v4/edit?usp=sharing))
 
-## Part1
+## Part 2
 
-- Вопрос 1	 
-> ssh позволяет заходить на удаленные серверы, управлять ими и выполнять команды при работе через незащищенные сети. При помощи него данные шифруются, обеспечивается безопасность и защищенность, аутентификация пользователей. Также можно открывать ssh tunnel и перенаправлять трафик с локальных портов на порты удаленного сервера.
+- Данные для проверки работы 
+> (https://8b7si3.buildship.run/me](https://8b7si3.buildship.run/message)
+> {
+> "username": "admin",
+> "password": "admin",
+> "message": {
+>   "to": "elya",
+>   "text": "hi"
+>  }
+> }
+[Скрин буилдшипа]([https://drive.google.com/file/d/1q8mOOZY584GQDueKdjzIIke_v5OqRPU_/view?usp=sharing](https://docs.google.com/document/d/1o-Jr56dm3gv0kHCwplex3QjXYw1dEn8FLc13U6z79v4/edit?usp=sharing))
 
-- Вопрос 2	 
-> Файл ~/.ssh/authorized_keys
+## Part 3
 
-- Вопрос 3	 
-> long polling — способ получения сообщений с серверов телеграм, при котором мы самостоятельно отправляем запрос на получение новых обновлений (сообщений) в нашем боте. Webhooks — способ получения сообщений с серверов телеграм, при котором телеграм самостоятельно отправляет запрос с объектом обновления на наш сервер каждый раз, когда на наш бот отправляется новое сообщение.
+- Запрос 1
 
+```sql
+SELECT username FROM users
+```
 
-- Вопрос 4	 
-> Это инструмент в репозитории для планирования работы, отслеживания и обсуждения задач, ошибок, предложений по улучшению. Нужен для того, чтобы разработчики, дизайнеры, менеджеры, служба поддержки, пользователи могли взаимодействовать между собой: обсуждать идеи, ошибки, отзывы, задачи, проблемы. Примеры: https://github.com/facebook/react-native/issues , https://github.com/apple/ml-stable-diffusion/issues
+- Запрос 2
 
-- Вопрос 5	 
-> Можно добавить в папку images любой пустой или не пустой файл. Или же общепринято добавить туда пустой файл .gitkeep
+```sql
+SELECT 
+    users.username, 
+    COUNT(messages.id) AS number_of_sent_messages
+FROM 
+    users
+LEFT JOIN 
+    messages ON users.id = messages.from
+GROUP BY 
+    users.username
+```
+
+- Запрос 3
+
+```sql
+SELECT 
+    users.username, 
+    COUNT(messages.id) AS number_of_received_messages
+FROM 
+    users
+JOIN 
+    messages ON users.id = messages.to
+GROUP BY 
+    users.username
+ORDER BY 
+    number_of_received_messages DESC
+LIMIT 1
+```
+
+- Запрос 4
+
+```sql
+SELECT AVG(message_count) AS average_messages_sent
+FROM (
+    SELECT COUNT(messages.id) AS message_count 
+    FROM users 
+    LEFT JOIN messages ON users.id = messages.from 
+    GROUP BY username
+) AS subquery
+```
