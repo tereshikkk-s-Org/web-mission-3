@@ -10,12 +10,12 @@
   "username": "admin"
 }
 ```
-> [Скрин буилдшипа]([https://drive.google.com/file/d/1q8mOOZY584GQDueKdjzIIke_v5OqRPU_/view?usp=sharing](https://docs.google.com/document/d/1o-Jr56dm3gv0kHCwplex3QjXYw1dEn8FLc13U6z79v4/edit?usp=sharing))
+> [Скрин буилдшипа](https://docs.google.com/document/d/1o-Jr56dm3gv0kHCwplex3QjXYw1dEn8FLc13U6z79v4/edit?usp=sharing)
 
 ## Part 2
 
 - Данные для проверки работы 
-> (https://8b7si3.buildship.run/me](https://8b7si3.buildship.run/message)
+> (https://8b7si3.buildship.run/message)
 ```json
 {
   "password": "admin",
@@ -26,7 +26,7 @@
   "username": "admin"
 }
 ```
-> [Скрин буилдшипа]([https://drive.google.com/file/d/1q8mOOZY584GQDueKdjzIIke_v5OqRPU_/view?usp=sharing](https://docs.google.com/document/d/1o-Jr56dm3gv0kHCwplex3QjXYw1dEn8FLc13U6z79v4/edit?usp=sharing))
+> [Скрин буилдшипа](https://docs.google.com/document/d/1o-Jr56dm3gv0kHCwplex3QjXYw1dEn8FLc13U6z79v4/edit?usp=sharing)
 
 ## Part 3
 
