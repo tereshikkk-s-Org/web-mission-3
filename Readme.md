@@ -2,31 +2,11 @@
 
 ## Part 1
 
-- Данные для проверки работы 
-> (https://8b7si3.buildship.run/me)
-```json
-{
-  "password": "admin",
-  "username": "admin"
-}
-```
-> [Скрин буилдшипа](https://docs.google.com/document/d/1o-Jr56dm3gv0kHCwplex3QjXYw1dEn8FLc13U6z79v4/edit?usp=sharing)
+> [Видео](https://drive.google.com/file/d/1eg4qiuC0l8idB0g-g3x2HWGsXafuMw34/view?usp=sharing)
 
 ## Part 2
 
-- Данные для проверки работы 
-> (https://8b7si3.buildship.run/message)
-```json
-{
-  "password": "admin",
-  "message": {
-    "text": "hi",
-    "to": "elya"
-  },
-  "username": "admin"
-}
-```
-> [Скрин буилдшипа](https://docs.google.com/document/d/1o-Jr56dm3gv0kHCwplex3QjXYw1dEn8FLc13U6z79v4/edit?usp=sharing)
+> [Видео](https://drive.google.com/file/d/1f4t_J8XTFKaIQzadEIbd6ZErDAlniA_M/view?usp=sharing)
 
 ## Part 3
 
